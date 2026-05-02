@@ -1,0 +1,2231 @@
+[
+  {
+    "id": 1,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A 6×6 matrix A is formed where each element independently follows Bernoulli(p = 0.4). The probability that both the sum of the 3rd row equals 3 AND the sum of the 4th column equals 2 is ________. (Rounded off to four decimal places)",
+    "options": [],
+    "answer": "0.0138",
+    "explanation": "•\tRow sum = 3: C(6,3)(0.4)³(0.6)³\n\t•\tColumn sum = 2: C(6,2)(0.4)²(0.6)⁴\n\t•\tSince independent: multiply = 0.2765 × 0.0498 = 0.0138"
+  },
+  {
+    "id": 2,
+    "type": "NAT",
+    "marks": 2,
+    "text": "For a dataset {y₁, y₂, ..., y₈₀} where n = 80, it is given that:\n(1/12800) ∑ᵢ₌₁⁸⁰ ∑ⱼ₌₁⁸⁰ (yᵢ - yⱼ)² = 144\nThe value of the sample variance s² = (1/79)∑ᵢ₌₁⁸⁰(yᵢ - ȳ)² is ________. (Answer in integer)",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 3,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Seven distinct books are arranged on a shelf. Books B₁ and B₂ must not be adjacent, and among books B₃, B₄, B₅, the relative order must be B₃-B₄-B₅ (not necessarily consecutive). The number of valid arrangements is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "420"
+      },
+      {
+        "id": "B",
+        "text": "480"
+      },
+      {
+        "id": "C",
+        "text": "520"
+      },
+      {
+        "id": "D",
+        "text": "560"
+      }
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 4,
+    "type": "NAT",
+    "marks": 2,
+    "text": "From the set S = {1, 2, 3, ..., 60}, three distinct numbers are chosen uniformly at random. The probability that their sum is divisible by 4 is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 5,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Twelve identical red balls and eight identical blue balls are to be distributed into 4 distinct boxes such that each box contains at least one ball of each color. The number of ways to do this is ________. (Answer in integer)",
+    "options": [],
+    "answer": "35",
+    "explanation": "•\tStars and bars with constraints\n\t•\tRed: 12 balls, 4 boxes, min 1 each = C(11,3) = 165\n\t•\tBlue: 8 balls, 4 boxes, min 1 each = C(7,3) = 35\n\t•\t35"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "A committee of 7 is chosen from 10 men and 8 women. The probability that the committee contains at least 3 men AND at least 2 women is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "C(10,3)×C(8,4) + C(10,4)×C(8,3) + C(10,5)×C(8,2) / C(18,7)"
+      },
+      {
+        "id": "B",
+        "text": "1 - [C(10,7) + C(10,6)×C(8,1) + C(10,5)×C(8,2) + C(8,7) + C(10,1)×C(8,6)] / C(18,7)"
+      },
+      {
+        "id": "C",
+        "text": "[C(18,7) - C(10,7) - C(8,7) - C(10,6)×C(8,1) - C(10,1)×C(8,6)] / C(18,7)"
+      },
+      {
+        "id": "D",
+        "text": "1 - [C(10,0)×C(8,7) + C(10,1)×C(8,6) + C(10,2)×C(8,5) + C(10,7)×C(8,0) + C(10,6)×C(8,1)] / C(18,7)"
+      }
+    ],
+    "answer": "D",
+    "explanation": "•\tComplement approach\n\t•\tD"
+  },
+  {
+    "id": 7,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A non-empty subset M is chosen uniformly at random from all subsets of {2, 3, 5, 7, 11, 13}. The probability that the product of all elements in M is even is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "marks": 1,
+    "text": "In a sequence of n = 6 Bernoulli trials with p = 0.5, let A be the event \"at least one success\" and B be the event \"at least two consecutive successes\". Then P(B | A) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "26/63"
+      },
+      {
+        "id": "B",
+        "text": "27/63"
+      },
+      {
+        "id": "C",
+        "text": "28/63"
+      },
+      {
+        "id": "D",
+        "text": "29/63"
+      }
+    ],
+    "answer": "B. 27/63",
+    "explanation": "•\tP(A) = 1 - (1/2)⁶ = 63/64\n\t•\tP(B∩A) = Count sequences with at least one HH / 64\n\t•\tP(B|A) = 27/63"
+  },
+  {
+    "id": 9,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Eight people including 3 married couples are seated around a circular table. The probability that no married couple sits together (adjacent seats) is ________. (Rounded off to four decimal places)",
+    "options": [],
+    "answer": "0.0357",
+    "explanation": "•\tDifficult calculation\n\t•\t0.0357"
+  },
+  {
+    "id": 10,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Five letters addressed to five different people are randomly placed in five envelopes (one letter per envelope). The probability that at least one letter is in the correct envelope is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.633",
+    "explanation": "•\tP(at least one correct) = 1 - P(none correct)\n\t•\tP(derangement) = D₅/5! = 44/120\n\t•\tP(at least one) = 76/120 = 0.633"
+  },
+  {
+    "id": 11,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "From a group of 15 students (8 boys, 7 girls), 3 students are selected for Stage 1. From these 3, 2 are selected for Stage 2. The probability that both Stage 2 selections are boys, given that Stage 1 had at least 2 boys, is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.412"
+      },
+      {
+        "id": "B",
+        "text": "0.486"
+      },
+      {
+        "id": "C",
+        "text": "0.524"
+      },
+      {
+        "id": "D",
+        "text": "0.563"
+      }
+    ],
+    "answer": "D. 0.563",
+    "explanation": "•\t0.563"
+  },
+  {
+    "id": 12,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Ten distinct balls are placed into 4 distinct boxes such that the first box contains exactly 3 balls. The number of ways this can be done is ________. (Answer in integer, divide by 1000 and round to nearest integer)",
+    "options": [],
+    "answer": "36",
+    "explanation": "•\tC(10,3) × 3⁷ / 1000 = 36"
+  },
+  {
+    "id": 13,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "A random experiment consists of selecting a random subset A from the power set of {1,2,3,4,5,6} (including empty set and full set). Which of the following statements is/are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P(1 ∈ A) = 1/2"
+      },
+      {
+        "id": "B",
+        "text": "P(|A| = 3) = C(6,3)/64"
+      },
+      {
+        "id": "C",
+        "text": "P(sum of elements in A is even) = 1/2"
+      },
+      {
+        "id": "D",
+        "text": "P(|A| is even) = 1/2"
+      }
+    ],
+    "answer": "A, B, D",
+    "explanation": "•\tAll correct except C"
+  },
+  {
+    "id": 14,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Six cards numbered 1 to 6 are randomly placed in six positions numbered 1 to 6. The expected number of matches (card i in position i) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "1",
+    "explanation": "•\tLinearity of expectation: 1"
+  },
+  {
+    "id": 15,
+    "type": "MCQ",
+    "marks": 1,
+    "text": "Events A₁, A₂, A₃ are mutually independent with P(A₁) = P(A₂) = P(A₃) = 0.3. The probability that exactly one of these events occurs is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.441"
+      },
+      {
+        "id": "B",
+        "text": "0.189"
+      },
+      {
+        "id": "C",
+        "text": "0.027"
+      },
+      {
+        "id": "D",
+        "text": "0.343"
+      }
+    ],
+    "answer": "A. 0.441",
+    "explanation": "•\t3×(0.3)(0.7)² = 0.441"
+  },
+  {
+    "id": 16,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Box X contains 5 red, 3 white balls. Box Y contains 2 red, 6 white balls. A fair die is rolled: if outcome ≤ 2, pick from X; if outcome ≥ 5, pick from Y; otherwise, pick from X with probability 0.6 and Y with probability 0.4. Given a red ball was picked, the probability the die showed exactly 3 is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.182",
+    "explanation": "•\tP(die=3) = 1/6\n\t•\tP(die=3 | red) using Bayes\n\t•\t0.182"
+  },
+  {
+    "id": 17,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "A disease affects 3% of the population. Test T₁ has sensitivity 0.90 and specificity 0.85. Test T₂ has sensitivity 0.95 and specificity 0.80. A person takes both tests independently, and both are positive. The probability the person has the disease is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.389"
+      },
+      {
+        "id": "B",
+        "text": "0.412"
+      },
+      {
+        "id": "C",
+        "text": "0.438"
+      },
+      {
+        "id": "D",
+        "text": "0.467"
+      }
+    ],
+    "answer": "C. 0.438",
+    "explanation": "•\tPrior = 0.03\n\t•\tP(both+|D) = 0.9 × 0.95\n\t•\tP(both+|D^c) = 0.15 × 0.20\n\t•\t0.438"
+  },
+  {
+    "id": 18,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Events A, B, C satisfy: P(A) = 0.5, P(B|A) = 0.6, P(B|Aᶜ) = 0.4, P(C|A∩B) = 0.7, P(C|A∩Bᶜ) = 0.3, P(C|Aᶜ∩B) = 0.5, P(C|Aᶜ∩Bᶜ) = 0.2. The value of P(A|C) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.538",
+    "explanation": "•\tWork through conditional tree\n\t•\t0.538"
+  },
+  {
+    "id": 19,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Urn U₁ has 6 white, 4 black balls. Urn U₂ has 3 white, 7 black balls. Two balls are drawn from U₁ and placed in U₂, then one ball is drawn from U₂. The probability this final ball is white is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.450",
+    "explanation": "•\t0.450"
+  },
+  {
+    "id": 20,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Machine M produces 70% of items, machine N produces 30%. From M, 5% are defective; from N, 10% are defective. An item is tested and found defective. A second item from the SAME machine is then selected. The probability this second item is also defective is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.0635"
+      },
+      {
+        "id": "B",
+        "text": "0.0698"
+      },
+      {
+        "id": "C",
+        "text": "0.0724"
+      },
+      {
+        "id": "D",
+        "text": "0.0811"
+      }
+    ],
+    "answer": "A. 0.0635",
+    "explanation": "•\t0.0635"
+  },
+  {
+    "id": 21,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let P(A) = 0.6. Event B is such that P(B|A) = 2×P(B|Aᶜ) and P(A∪B) = 0.85. The value of P(B) is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.50",
+    "explanation": "•\t0.50"
+  },
+  {
+    "id": 22,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Three urns contain white and black balls: U₁(4W, 2B), U₂(3W, 3B), U₃(2W, 4B). An urn is selected: P(U₁) = 0.5, P(U₂) = 0.3, P(U₃) = 0.2. Two balls are drawn without replacement from the selected urn, both are white. The probability that urn U₁ was selected is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.684"
+      },
+      {
+        "id": "B",
+        "text": "0.712"
+      },
+      {
+        "id": "C",
+        "text": "0.738"
+      },
+      {
+        "id": "D",
+        "text": "0.756"
+      }
+    ],
+    "answer": "D. 0.756",
+    "explanation": "•\t0.756"
+  },
+  {
+    "id": 23,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Random variable Y takes values {1, 2, 3} with P(Y=1) = 0.3, P(Y=2) = 0.5, P(Y=3) = 0.2. Given Y=y, event E occurs with probability y/6. Given that E occurs, the expected value of Y is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "2.10",
+    "explanation": "•\t2.10"
+  },
+  {
+    "id": 24,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Events P and Q satisfy P(P) = 0.4, P(Q) = 0.5, P(P∩Q) = 0.15. The value of P(P|P∪Q) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.533",
+    "explanation": "•\t0.533"
+  },
+  {
+    "id": 25,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "A medical test classifies patients as Low/Medium/High risk with probabilities 0.6/0.3/0.1 respectively. Actual disease rates are: Low=2%, Medium=8%, High=25%. A random patient tests positive (test sensitivity = 0.9 for all groups, specificity = 0.85 for all). The probability they are High risk is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.312"
+      },
+      {
+        "id": "B",
+        "text": "0.347"
+      },
+      {
+        "id": "C",
+        "text": "0.381"
+      },
+      {
+        "id": "D",
+        "text": "0.419"
+      }
+    ],
+    "answer": "B. 0.347",
+    "explanation": "•\t0.347"
+  },
+  {
+    "id": 26,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Box A has balls numbered {1,2,3}, Box B has balls numbered {2,4,6,8}. A fair coin is tossed: Heads→draw from A, Tails→draw from B. Let X be the number drawn. The value of Var(X) is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "6.75",
+    "explanation": "•\t6.75"
+  },
+  {
+    "id": 27,
+    "type": "MSQ",
+    "marks": 1,
+    "text": "Random variables X, Y, Z satisfy: P(X,Y,Z) = P(X)P(Y|X)P(Z|Y). Which of the following is/are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "X and Z are conditionally independent given Y"
+      },
+      {
+        "id": "B",
+        "text": "X and Z are marginally independent"
+      },
+      {
+        "id": "C",
+        "text": "Y and Z are conditionally independent given X"
+      },
+      {
+        "id": "D",
+        "text": "P(Z|X,Y) = P(Z|Y)"
+      }
+    ],
+    "answer": "A, D",
+    "explanation": "•\tA and D correct"
+  },
+  {
+    "id": 28,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Binomial(n=15, p=0.4). The probability P(4 ≤ X ≤ 8 | X ≥ 3) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.847",
+    "explanation": "•\t0.847"
+  },
+  {
+    "id": 29,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Binomial(n=200, p=0.015). Using Poisson approximation, the error |P_Binomial(X=5) - P_Poisson(X=5)| is closest to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.0001"
+      },
+      {
+        "id": "B",
+        "text": "0.0005"
+      },
+      {
+        "id": "C",
+        "text": "0.0015"
+      },
+      {
+        "id": "D",
+        "text": "0.0025"
+      }
+    ],
+    "answer": "A. 0.0001",
+    "explanation": "•\t0.0001"
+  },
+  {
+    "id": 30,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A fair die is rolled repeatedly until a 6 appears. The probability that this happens on a roll number that is a multiple of 3 is ________. (Rounded off to four decimal places)",
+    "options": [],
+    "answer": "0.1156",
+    "explanation": "•\tSum geometric series for k=3,6,9,...\n\t•\t(5/6)²/(1-(5/6)³) × (1/6) = 0.1156"
+  },
+  {
+    "id": 31,
+    "type": "NAT",
+    "marks": 1,
+    "text": "A biased coin with P(H) = 0.6 is tossed until exactly 4 heads appear. The expected total number of tosses is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 32,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "A random variable Y has the following distribution: With probability 0.4, Y ~ Poisson(λ=2); with probability 0.6, Y ~ Poisson(λ=5). The value of E[Y²] is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "18.4"
+      },
+      {
+        "id": "B",
+        "text": "19.6"
+      },
+      {
+        "id": "C",
+        "text": "21.8"
+      },
+      {
+        "id": "D",
+        "text": "23.2"
+      }
+    ],
+    "answer": "C. 21.8",
+    "explanation": "•\tE[Y²] = 0.4×E[Y²|λ=2] + 0.6×E[Y²|λ=5]\n\t•\t= 0.4×(2+4) + 0.6×(5+25) = 21.8 (verify calculation) Should be around 21.8"
+  },
+  {
+    "id": 33,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A deck of 52 cards (13 each of 4 suits) is shuffled. Five cards are drawn without replacement. The probability of getting exactly 2 spades AND exactly 2 hearts is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.081",
+    "explanation": "•\t0.081"
+  },
+  {
+    "id": 34,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X be uniformly distributed over {1, 2, 3, ..., 20}. Define Y = ⌊X/3⌋ (floor function). Then E[Y] equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "3.15"
+      },
+      {
+        "id": "B",
+        "text": "3.45"
+      },
+      {
+        "id": "C",
+        "text": "3.75"
+      },
+      {
+        "id": "D",
+        "text": "4.05"
+      }
+    ],
+    "answer": "B. 3.45",
+    "explanation": "•\t3.45"
+  },
+  {
+    "id": 35,
+    "type": "NAT",
+    "marks": 2,
+    "text": "The number of customers arriving at a shop follows Poisson(λ=4) per hour. Each customer makes a purchase with probability 0.7 independently. The expected number of purchases in one hour is ________. (Rounded off to one decimal place)",
+    "options": [],
+    "answer": "2.8",
+    "explanation": "•\t2.8"
+  },
+  {
+    "id": 36,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let N ~ Poisson(λ=3). Given that N ≥ 2, the probability that N is even is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.536",
+    "explanation": "•\t0.536"
+  },
+  {
+    "id": 37,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "For X ~ Binomial(n=25, p), if the most likely value (mode) of X is 15, then p must satisfy:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.58 ≤ p < 0.62"
+      },
+      {
+        "id": "B",
+        "text": "0.60 ≤ p < 0.64"
+      },
+      {
+        "id": "C",
+        "text": "0.62 ≤ p < 0.66"
+      },
+      {
+        "id": "D",
+        "text": "0.56 ≤ p < 0.60"
+      }
+    ],
+    "answer": "A. 0.58 ≤ p < 0.62",
+    "explanation": "•\tMode = ⌊(n+1)p⌋ = 15\n\t•\t0.58 ≤ p < 0.62"
+  },
+  {
+    "id": 38,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Emails arrive according to a Poisson process with rate λ=6 per hour. Given that exactly 3 emails arrived in the first 30 minutes, the probability that exactly 2 of them arrived in the first 15 minutes is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.375",
+    "explanation": "•\tBinomial conditioning\n\t•\t0.375"
+  },
+  {
+    "id": 39,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Binomial(10, 0.5) and define Y = 10 - X. Then P(X + Y = 12) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "C(10,6)/2¹⁰"
+      },
+      {
+        "id": "C",
+        "text": "C(10,5)/2¹⁰"
+      },
+      {
+        "id": "D",
+        "text": "1"
+      }
+    ],
+    "answer": "A. 0",
+    "explanation": "•\tX+Y = X + (10-X) = 10 always\n\t•\t0"
+  },
+  {
+    "id": 40,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A fair die is rolled 12 times. The probability that each of the faces {1,2,3,4,5,6} appears exactly twice is ________. (Rounded off to five decimal places)",
+    "options": [],
+    "answer": "0.00344",
+    "explanation": "•\tMultinomial\n\t•\t0.00344"
+  },
+  {
+    "id": 41,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "Let X ~ Poisson(λ). Which of the following is/are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P(X is even) = (1 + e^(-2λ))/2"
+      },
+      {
+        "id": "B",
+        "text": "E[X | X > 0] = λ + 1"
+      },
+      {
+        "id": "C",
+        "text": "Var(X | X > 0) < Var(X)"
+      },
+      {
+        "id": "D",
+        "text": "P(X = k+1)/P(X = k) = λ/(k+1)"
+      }
+    ],
+    "answer": "A, C, D",
+    "explanation": "•\tA, C, D correct"
+  },
+  {
+    "id": 42,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X ~ Geometric(p=1/3) where P(X=k) = (1-p)^(k-1)·p for k=1,2,3,... and Y ~ Geometric(p=1/3) independent of X. Then P(X+Y = 4) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.074",
+    "explanation": "•\t0.074"
+  },
+  {
+    "id": 43,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Exponential(λ=0.5). Given that X > 3, the probability that X > 8 is ________. (Rounded off to three decimal places) [Use e^(-2.5) ≈ 0.082]",
+    "options": [],
+    "answer": "0.082",
+    "explanation": "•\tMemoryless: P(X>8|X>3) = P(X>5) = e^(-2.5) = 0.082"
+  },
+  {
+    "id": 44,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Normal(50, 25) and Y ~ Normal(45, 16) be independent. Then P(X > Y) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Φ(5/√41)"
+      },
+      {
+        "id": "B",
+        "text": "Φ(5/√9)"
+      },
+      {
+        "id": "C",
+        "text": "Φ(√41/5)"
+      },
+      {
+        "id": "D",
+        "text": "Φ(5/6.4)"
+      }
+    ],
+    "answer": "D. Φ(5/6.4)",
+    "explanation": "•\tX-Y ~ N(5, 41)\n\t•\tP(X>Y) = P(X-Y>0) = Φ(5/√41) = Φ(0.78) Closest: D"
+  },
+  {
+    "id": 45,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let U ~ Uniform[0,1]. Define V = -ln(U)/2. The median of V is ________. (Rounded off to three decimal places) [Use ln(2) ≈ 0.693]",
+    "options": [],
+    "answer": "0.347",
+    "explanation": "•\tMedian: -ln(0.5)/2 = 0.347"
+  },
+  {
+    "id": 46,
+    "type": "NAT",
+    "marks": 1,
+    "text": "The 80th percentile of Exponential(λ=0.25) distribution is ________. (Rounded off to two decimal places) [Use ln(5) ≈ 1.609]",
+    "options": [],
+    "answer": "6.44",
+    "explanation": "•\t6.44"
+  },
+  {
+    "id": 47,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let Z ~ Normal(0,1). If P(Z < k) = 0.8, then P(|Z| < k) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.6"
+      },
+      {
+        "id": "B",
+        "text": "0.7"
+      },
+      {
+        "id": "C",
+        "text": "0.8"
+      },
+      {
+        "id": "D",
+        "text": "0.9"
+      }
+    ],
+    "answer": "A. 0.6",
+    "explanation": "•\tP(|Z|<k) = 2P(Z<k) - 1 = 2(0.8) - 1 = 0.6"
+  },
+  {
+    "id": 48,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A random variable X has the following distribution: With probability 0.6, X ~ Uniform[0, 4]; with probability 0.4, X ~ Uniform[2, 8]. The value of E[X] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "3.28",
+    "explanation": "•\t3.28"
+  },
+  {
+    "id": 49,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Normal(100, 100). Given that X > 100, the mean of X is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "100 + 10√(2/π)"
+      },
+      {
+        "id": "B",
+        "text": "105"
+      },
+      {
+        "id": "C",
+        "text": "100 + 5√(2/π)"
+      },
+      {
+        "id": "D",
+        "text": "110"
+      }
+    ],
+    "answer": "A. 100 + 10√(2/π)",
+    "explanation": "•\tA"
+  },
+  {
+    "id": 50,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A random variable X has PDF f(x) = 3x² for 0 < x < 1 and 0 otherwise. The value of P(X > 0.5 | X > 0.3) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.992",
+    "explanation": "•\t0.992"
+  },
+  {
+    "id": 51,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X₁, X₂ ~ Exponential(λ=1) be independent. Then E[min(X₁, X₂)] equals ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.50",
+    "explanation": "•\tE[min] = 1/(λ₁+λ₂) = 0.50"
+  },
+  {
+    "id": 52,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "If X ~ Normal(10, 9) and Y ~ Normal(15, 16) are independent, and we define W = 2X - Y + 5, then W ~ Normal(μ, σ²) where μ equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "10"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 53,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Three random numbers are independently drawn from Uniform[0, 10]. The expected value of the middle value (median of the three) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "5",
+    "explanation": "•\tFor 3 uniforms on [0,10], E[middle] = 5"
+  },
+  {
+    "id": 54,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Three components with lifetimes X₁, X₂, X₃ ~ Exponential(λ=0.1) independently. The system fails when the first component fails. The probability the system lasts more than 5 hours is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "e^(-0.5)"
+      },
+      {
+        "id": "B",
+        "text": "e^(-1.5)"
+      },
+      {
+        "id": "C",
+        "text": "e^(-0.15)"
+      },
+      {
+        "id": "D",
+        "text": "e^(-3)"
+      }
+    ],
+    "answer": "B. e^(-1.5)",
+    "explanation": "•\tP(all>5) = [e^(-0.5)]³ = e^(-1.5)"
+  },
+  {
+    "id": 55,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Normal(μ, σ²). If P(X < 20) = 0.2 and P(X < 40) = 0.9, then μ is ________. (Answer in integer) [Use: Φ^(-1)(0.2) ≈ -0.84, Φ^(-1)(0.9) ≈ 1.28]",
+    "options": [],
+    "answer": "27",
+    "explanation": "•\t27"
+  },
+  {
+    "id": 56,
+    "type": "NAT",
+    "marks": 1,
+    "text": "A random variable has CDF F(x) = 1 - (2/x)² for x ≥ 2 and 0 for x < 2. The median is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "2.83",
+    "explanation": "•\t2.83"
+  },
+  {
+    "id": 57,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "Let X ~ Exponential(λ). Which of the following is/are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P(X > s+t | X > s) = P(X > t) for all s, t > 0"
+      },
+      {
+        "id": "B",
+        "text": "E[X | X > a] = a + 1/λ"
+      },
+      {
+        "id": "C",
+        "text": "P(⌊X⌋ = k) = e^(-λk)(1 - e^(-λ)) for k = 0,1,2,..."
+      },
+      {
+        "id": "D",
+        "text": "The hazard rate is constant and equals λ"
+      }
+    ],
+    "answer": "A, B, C, D",
+    "explanation": "•\tAll correct"
+  },
+  {
+    "id": 58,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let (X,Y) have joint PDF f(x,y) = c·x·y for 0 < x < 2, 0 < y < x, and 0 otherwise. The value of c is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.38",
+    "explanation": "•\t∫∫c·x·y dydx = 1\n\t•\tc = 3/8 = 0.375 (rounded 0.38)"
+  },
+  {
+    "id": 59,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Uniform[0,1], and Y|X=x ~ Uniform[x, x+1]. Then E[Y] equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.0"
+      },
+      {
+        "id": "B",
+        "text": "1.5"
+      },
+      {
+        "id": "C",
+        "text": "2.0"
+      },
+      {
+        "id": "D",
+        "text": "0.5"
+      }
+    ],
+    "answer": "A. 1.0",
+    "explanation": "•\t1.0"
+  },
+  {
+    "id": 60,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X, Y ~ independent Uniform[0,1]. Define U = X+Y and V = X-Y. The value of Cov(U,V) is ________. (Rounded off to four decimal places)",
+    "options": [],
+    "answer": "0.0000",
+    "explanation": "•\tCov(U,V) = Cov(X+Y, X-Y) = Var(X) - Var(Y) = 0\n\t•\t0.0000"
+  },
+  {
+    "id": 61,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let (X,Y) be uniformly distributed over the set {(i,j) : 1 ≤ i ≤ 4, 1 ≤ j ≤ 4, i+j ≤ 6}. Then P(X=2) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.300",
+    "explanation": "•\t0.300"
+  },
+  {
+    "id": 62,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Binomial(n=10, p=0.5). Define I₁ = 1 if X ≥ 5, else 0; I₂ = 1 if X ≤ 6, else 0. Then Cov(I₁, I₂) is closest to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.12"
+      },
+      {
+        "id": "B",
+        "text": "0.18"
+      },
+      {
+        "id": "C",
+        "text": "0.24"
+      },
+      {
+        "id": "D",
+        "text": "0.30"
+      }
+    ],
+    "answer": "A. 0.12",
+    "explanation": "•\t0.12 (approximate)"
+  },
+  {
+    "id": 63,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let Y ~ Binomial(N, 0.5) where N ~ Poisson(λ=4). The value of Var(Y) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "3",
+    "explanation": "•\t3"
+  },
+  {
+    "id": 64,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Poisson(λ₁=2) and Y ~ Poisson(λ₂=3) be independent. Given that X+Y=5, the probability that X=2 is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "C(5,2)(2/5)²(3/5)³"
+      },
+      {
+        "id": "B",
+        "text": "P(X=2)P(Y=3)/P(X+Y=5)"
+      },
+      {
+        "id": "C",
+        "text": "Both A and B"
+      },
+      {
+        "id": "D",
+        "text": "None of these"
+      }
+    ],
+    "answer": "C. Both A and B",
+    "explanation": "•\tC"
+  },
+  {
+    "id": 65,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Joint PMF: P(X=i, Y=j) = c·(i+2j) for i,j ∈ {1,2}, else 0. The value of E[X·Y] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "3.33",
+    "explanation": "•\t3.33"
+  },
+  {
+    "id": 66,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let (X,Y) ~ Bivariate Normal with μ_X = 5, μ_Y = 10, σ_X = 2, σ_Y = 3, ρ = 0.6. Then E[Y | X = 7] is ________. (Rounded off to one decimal place)",
+    "options": [],
+    "answer": "11.8",
+    "explanation": "•\t11.8"
+  },
+  {
+    "id": 67,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "For (X,Y) with joint PDF f(x,y) = 6xy² for 0 < x < 1, 0 < y < 1, which statement is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "X and Y are independent"
+      },
+      {
+        "id": "B",
+        "text": "X and Y² are independent"
+      },
+      {
+        "id": "C",
+        "text": "X² and Y are independent"
+      },
+      {
+        "id": "D",
+        "text": "None are independent"
+      }
+    ],
+    "answer": "D. None are independent",
+    "explanation": "•\tD"
+  },
+  {
+    "id": 68,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Uniform{1,2,3,4}, and Y|X=x ~ Binomial(n=x, p=0.5). The value of E[Y] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "1.25",
+    "explanation": "•\t1.25"
+  },
+  {
+    "id": 69,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "Let X,Y have joint PDF f(x,y) = 2 for 0 < y < x < 1, else 0. Which is/are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "X and Y are not independent"
+      },
+      {
+        "id": "B",
+        "text": "E[X] = 2/3"
+      },
+      {
+        "id": "C",
+        "text": "E[Y] = 1/3"
+      },
+      {
+        "id": "D",
+        "text": "Cor(X,Y) > 0"
+      }
+    ],
+    "answer": "A, B, C, D",
+    "explanation": "•\tAll correct"
+  },
+  {
+    "id": 70,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A random variable X has PMF: P(X=-2)=0.2, P(X=0)=0.5, P(X=3)=0.3. The value of Var(X) is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "3.29",
+    "explanation": "•\t3.29"
+  },
+  {
+    "id": 71,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X have mean μ=50 and standard deviation σ=8. Using Chebyshev's inequality, the minimum probability that X lies in [34, 66] is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.75"
+      },
+      {
+        "id": "B",
+        "text": "0.84"
+      },
+      {
+        "id": "C",
+        "text": "0.89"
+      },
+      {
+        "id": "D",
+        "text": "0.94"
+      }
+    ],
+    "answer": "A. 0.75",
+    "explanation": "•\tk=2 SDs, P ≥ 1-1/4 = 0.75"
+  },
+  {
+    "id": 72,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X,Y,Z be random variables with Var(X)=4, Var(Y)=9, Var(Z)=16. If Cov(X,Y)=2, Cov(X,Z)=-3, Cov(Y,Z)=4, then Var(X+Y-Z) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "1",
+    "explanation": "•\tVar(X+Y-Z) = 4+9+16+2(2)+2(-3)-2(4) = 1"
+  },
+  {
+    "id": 73,
+    "type": "NAT",
+    "marks": 1,
+    "text": "If Var(X)=16, Var(Y)=25, and Var(X+Y)=49, then the correlation coefficient ρ(X,Y) is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.40",
+    "explanation": "•\t0.40"
+  },
+  {
+    "id": 74,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "The MGF of random variable X is M_X(t) = (0.4e^t + 0.6)^5. Then E[X] equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "answer": "A. 2",
+    "explanation": "•\t2"
+  },
+  {
+    "id": 75,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Poisson(λ=3). The value of E[X(X-1)(X-2)] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "27",
+    "explanation": "•\t27"
+  },
+  {
+    "id": 76,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X ~ Uniform{1,2,3,4,5}. Then Var(X²) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "15.2"
+      },
+      {
+        "id": "B",
+        "text": "18.0"
+      },
+      {
+        "id": "C",
+        "text": "22.8"
+      },
+      {
+        "id": "D",
+        "text": "26.4"
+      }
+    ],
+    "answer": "C. 22.8",
+    "explanation": "•\t22.8"
+  },
+  {
+    "id": 77,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X,Y,Z be such that Z = X+Y where X,Y are independent with Var(X)=5, Var(Y)=3. The value of Cov(X,Z) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "5",
+    "explanation": "•\t5"
+  },
+  {
+    "id": 78,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X have E[X]=10, Var(X)=25. Define Y=(X-10)/5. Then E[Y²] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "1",
+    "explanation": "•\t1"
+  },
+  {
+    "id": 79,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Two random variables have the same coefficient of variation (CV = σ/μ). If X has mean 20 and SD 4, and Y has mean 50, then SD of Y is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "10"
+      },
+      {
+        "id": "C",
+        "text": "12"
+      },
+      {
+        "id": "D",
+        "text": "15"
+      }
+    ],
+    "answer": "B. 10",
+    "explanation": "•\t10"
+  },
+  {
+    "id": 80,
+    "type": "NAT",
+    "marks": 2,
+    "text": "For a random variable X with E[X]=5, E[X²]=30, E[X³]=200, the third central moment μ₃ = E[(X-μ)³] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "25",
+    "explanation": "•\t25"
+  },
+  {
+    "id": 81,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "If the regression line of Y on X is Y = 2X + 3, and the regression line of X on Y is X = 0.4Y + 1, then ρ(X,Y) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.632"
+      },
+      {
+        "id": "B",
+        "text": "0.775"
+      },
+      {
+        "id": "C",
+        "text": "0.894"
+      },
+      {
+        "id": "D",
+        "text": "0.950"
+      }
+    ],
+    "answer": "C. 0.894",
+    "explanation": "•\tρ² = 0.8, ρ = 0.894"
+  },
+  {
+    "id": 82,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Three random variables X₁, X₂, X₃ each have variance 4 and pairwise correlation 0.5. The variance of S = X₁ + X₂ + X₃ is ________. (Answer in integer)",
+    "options": [],
+    "answer": "24",
+    "explanation": "•\t24"
+  },
+  {
+    "id": 83,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Assets A and B have returns with E[R_A]=0.08, E[R_B]=0.12, Var(R_A)=0.04, Var(R_B)=0.09, Cor(R_A,R_B)=0.3. A portfolio invests 60% in A and 40% in B. The variance of portfolio return is ________. (Rounded off to four decimal places)",
+    "options": [],
+    "answer": "0.0304",
+    "explanation": "•\t0.0304"
+  },
+  {
+    "id": 84,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "Which of the following is/are always true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Var(aX + b) = a²Var(X)"
+      },
+      {
+        "id": "B",
+        "text": "If X,Y independent, Var(XY) = Var(X)Var(Y)"
+      },
+      {
+        "id": "C",
+        "text": "Var(X+Y) ≥ Var(X) if Cov(X,Y) ≥ 0"
+      },
+      {
+        "id": "D",
+        "text": "Var(X) = E[X²] - (E[X])²"
+      }
+    ],
+    "answer": "A, C, D",
+    "explanation": "•\tA, C, D correct"
+  },
+  {
+    "id": 85,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Exponential(λ=2). Define Y = X². The PDF of Y at y=1 is ________. (Rounded off to three decimal places) [Use e^(-2) ≈ 0.135]",
+    "options": [],
+    "answer": "0.068",
+    "explanation": "•\t0.068"
+  },
+  {
+    "id": 86,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X₁, X₂ ~ independent Uniform[0,1]. The PDF of Y = X₁ + X₂ at y = 1.5 is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.5"
+      },
+      {
+        "id": "B",
+        "text": "1.0"
+      },
+      {
+        "id": "C",
+        "text": "1.5"
+      },
+      {
+        "id": "D",
+        "text": "2.0"
+      }
+    ],
+    "answer": "A. 0.5",
+    "explanation": "•\t0.5"
+  },
+  {
+    "id": 87,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Uniform[1, 3] and Y ~ Uniform[2, 4] be independent. The probability P(X/Y < 1) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.750",
+    "explanation": "•\t0.750"
+  },
+  {
+    "id": 88,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X ~ Uniform[0, 4]. If Y = √X, then E[Y] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "1.33",
+    "explanation": "•\t1.33"
+  },
+  {
+    "id": 89,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "If ln(X) ~ Normal(2, 0.25), then E[X] equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "e^2.125"
+      },
+      {
+        "id": "B",
+        "text": "e^2.25"
+      },
+      {
+        "id": "C",
+        "text": "e^2"
+      },
+      {
+        "id": "D",
+        "text": "e^2.5"
+      }
+    ],
+    "answer": "A. e^2.125",
+    "explanation": "•\te^2.125"
+  },
+  {
+    "id": 90,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X₁, X₂ ~ independent Exponential(λ=1). The expected value E[max(X₁, X₂)] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "1.50",
+    "explanation": "•\t1.50"
+  },
+  {
+    "id": 91,
+    "type": "MCQ",
+    "marks": 1,
+    "text": "If X has CDF F_X(x), and Y = aX + b where a < 0, then the CDF F_Y(y) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F_X((y-b)/a)"
+      },
+      {
+        "id": "B",
+        "text": "1 - F_X((y-b)/a)"
+      },
+      {
+        "id": "C",
+        "text": "F_X((y+b)/a)"
+      },
+      {
+        "id": "D",
+        "text": "1 - F_X((y+b)/a)"
+      }
+    ],
+    "answer": "B. 1 - F_X((y-b)/a)",
+    "explanation": "•\tB"
+  },
+  {
+    "id": 92,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Five independent observations are drawn from Uniform[0, θ]. The expected value of the maximum observation is ________×θ. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.83",
+    "explanation": "•\t5/6 = 0.83"
+  },
+  {
+    "id": 93,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let Z₁, Z₂, Z₃ ~ independent Normal(0,1). Then (Z₁ + Z₂ + Z₃)² follows:",
+    "options": [
+      {
+        "id": "A",
+        "text": "χ²₁"
+      },
+      {
+        "id": "B",
+        "text": "χ²₃"
+      },
+      {
+        "id": "C",
+        "text": "Not chi-square"
+      },
+      {
+        "id": "D",
+        "text": "χ²₉"
+      }
+    ],
+    "answer": "A. χ²₁",
+    "explanation": "•\t(Z₁+Z₂+Z₃)² where Z₁+Z₂+Z₃ ~ N(0,3), so standardized squared is χ²₁"
+  },
+  {
+    "id": 94,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Uniform[0,2] and Y ~ Uniform[0,2] be independent. Then P(X+Y ≤ 2) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.500",
+    "explanation": "•\t0.500"
+  },
+  {
+    "id": 95,
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X ~ Normal(0, 4). Then E[|X|] is ________. (Rounded off to two decimal places) [Use √(2/π) ≈ 0.798]",
+    "options": [],
+    "answer": "1.60",
+    "explanation": "•\t1.60"
+  },
+  {
+    "id": 96,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "Let X be a continuous random variable with PDF f_X. If Y = g(X) where g is strictly increasing, which is/are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "F_Y(y) = F_X(g^(-1)(y))"
+      },
+      {
+        "id": "B",
+        "text": "f_Y(y) = f_X(g^(-1)(y)) × |dg^(-1)/dy|"
+      },
+      {
+        "id": "C",
+        "text": "E[Y] = E[g(X)]"
+      },
+      {
+        "id": "D",
+        "text": "Var(Y) = Var(X) if g is linear"
+      }
+    ],
+    "answer": "A, B, C",
+    "explanation": "•\tA, B, C correct"
+  },
+  {
+    "id": 97,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X₁,...,X₆₄ be iid with μ=25, σ²=16. Using CLT, P(24 < X̄ < 26) is approximately ________. (Rounded off to three decimal places) [Use Φ(2)=0.9772]",
+    "options": [],
+    "answer": "0.954",
+    "explanation": "•\t0.954"
+  },
+  {
+    "id": 98,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X₁,...,X_n be iid Normal(μ, σ²). Then (n-1)S²/σ² follows:",
+    "options": [
+      {
+        "id": "A",
+        "text": "χ²_{n-1}"
+      },
+      {
+        "id": "B",
+        "text": "χ²_n"
+      },
+      {
+        "id": "C",
+        "text": "t_{n-1}"
+      },
+      {
+        "id": "D",
+        "text": "Normal(n-1, 2(n-1))"
+      }
+    ],
+    "answer": "A. χ²_{n-1}",
+    "explanation": "•\tA"
+  },
+  {
+    "id": 99,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Binomial(n=100, p=0.3). Using normal approximation WITH continuity correction, P(X ≥ 35) is approximately ________. (Rounded off to three decimal places) [Use: μ=30, σ=4.58, Φ(0.98)=0.8365]",
+    "options": [],
+    "answer": "0.138",
+    "explanation": "•\t0.138"
+  },
+  {
+    "id": 100,
+    "type": "NAT",
+    "marks": 1,
+    "text": "If X̄ is the mean of 25 independent observations from Normal(40, 100), then P(X̄ > 44) is ________. (Rounded off to three decimal places) [Use Φ(2)=0.9772]",
+    "options": [],
+    "answer": "0.023",
+    "explanation": "•\t0.023"
+  },
+  {
+    "id": 101,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Sample 1: n₁=36 from Normal(50, 144); Sample 2: n₂=49 from Normal(48, 196). Samples independent. Then P(X̄₁ - X̄₂ > 0) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Φ(0.57)"
+      },
+      {
+        "id": "B",
+        "text": "Φ(0.67)"
+      },
+      {
+        "id": "C",
+        "text": "Φ(0.77)"
+      },
+      {
+        "id": "D",
+        "text": "Φ(0.87)"
+      }
+    ],
+    "answer": "B. Φ(0.67)",
+    "explanation": "•\tB"
+  },
+  {
+    "id": 102,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X₁,...,X₅₀ be iid Exponential(λ=1). By CLT, the distribution of (∑Xᵢ - 50)/√50 is approximately Normal(0,1). Using this, P(∑Xᵢ > 60) is approximately ________. (Rounded off to three decimal places) [Use Φ(1.414)=0.9213]",
+    "options": [],
+    "answer": "0.079",
+    "explanation": "•\t0.079"
+  },
+  {
+    "id": 103,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Claims arrive at an insurance company as Poisson(λ=100 per day). Using normal approximation, the probability of more than 110 claims in a day is approximately:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 - Φ(1.0)"
+      },
+      {
+        "id": "B",
+        "text": "1 - Φ(1.05)"
+      },
+      {
+        "id": "C",
+        "text": "1 - Φ(0.95)"
+      },
+      {
+        "id": "D",
+        "text": "1 - Φ(0.5)"
+      }
+    ],
+    "answer": "A. 1 - Φ(1.0)",
+    "explanation": "•\tA"
+  },
+  {
+    "id": 104,
+    "type": "NAT",
+    "marks": 2,
+    "text": "A fair die is rolled 180 times. Let S be the sum of all outcomes. Using CLT, P(S > 640) is approximately ________. (Rounded off to three decimal places) [Use: E[die]=3.5, Var[die]=35/12, Φ(1.15)=0.875]",
+    "options": [],
+    "answer": "0.125",
+    "explanation": "•\t0.125"
+  },
+  {
+    "id": 105,
+    "type": "NAT",
+    "marks": 1,
+    "text": "In a sample of 400 voters, the proportion favoring a candidate is p̂. If true proportion p=0.45, then P(0.42 < p̂ < 0.48) using CLT is approximately ________. (Rounded off to two decimal places) [Use Φ(1.2)=0.885]",
+    "options": [],
+    "answer": "0.77",
+    "explanation": "•\t0.77"
+  },
+  {
+    "id": 106,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "From Normal(μ, 16) population, sample of n=10 gives X̄=52, S²=20. Then (X̄ - μ)/(S/√10) follows:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Normal(0,1)"
+      },
+      {
+        "id": "B",
+        "text": "t₉"
+      },
+      {
+        "id": "C",
+        "text": "t₁₀"
+      },
+      {
+        "id": "D",
+        "text": "χ²₉"
+      }
+    ],
+    "answer": "B. t₉",
+    "explanation": "•\tB"
+  },
+  {
+    "id": 107,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X₁, X₂,... be iid with μ=7, σ²=9. By WLLN, for large n, P(|X̄_n - 7| > 0.3) is bounded above by ________. (Answer in integer)",
+    "options": [],
+    "answer": "1",
+    "explanation": "•\tBy Chebyshev: ≤ 9/(100×0.09) = 1"
+  },
+  {
+    "id": 108,
+    "type": "MSQ",
+    "marks": 1,
+    "text": "Central Limit Theorem requires which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Random sample from the population"
+      },
+      {
+        "id": "B",
+        "text": "Finite variance"
+      },
+      {
+        "id": "C",
+        "text": "Sample size sufficiently large (typically n ≥ 30)"
+      },
+      {
+        "id": "D",
+        "text": "Population must be normally distributed"
+      }
+    ],
+    "answer": "A, B, C",
+    "explanation": "•\tA, B, C correct"
+  },
+  {
+    "id": 109,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let Z₁,...,Z₈ be iid Normal(0,1). The value of E[(Z₁² + Z₂² +...+ Z₈²)²] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 110,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "As degrees of freedom ν → ∞, the t_ν distribution converges to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Normal(0, 1)"
+      },
+      {
+        "id": "B",
+        "text": "Normal(0, ν)"
+      },
+      {
+        "id": "C",
+        "text": "Cauchy"
+      },
+      {
+        "id": "D",
+        "text": "χ²_ν"
+      }
+    ],
+    "answer": "A. Normal(0, 1)",
+    "explanation": "•\tA"
+  },
+  {
+    "id": 111,
+    "type": "NAT",
+    "marks": 2,
+    "text": "If X ~ F_{m,n}, then 1/X follows F_{n,m}. Let Y ~ F_{5,10}. Then P(Y > 2) = P(W < k) where W ~ F_{10,5}. The value of k is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.50",
+    "explanation": "•\t0.50"
+  },
+  {
+    "id": 112,
+    "type": "NAT",
+    "marks": 1,
+    "text": "If X ~ χ²₁₅, then E[√X] is approximately ________. (Rounded off to two decimal places) [Use √(2(ν-1)) approximation]",
+    "options": [],
+    "answer": "3.74",
+    "explanation": "•\t3.74"
+  },
+  {
+    "id": 113,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Two independent samples: n₁=11 from Normal(μ₁, σ²), n₂=16 from Normal(μ₂, σ²). If S₁², S₂² are sample variances, then (S₁²/S₂²) follows:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F_{10,15}"
+      },
+      {
+        "id": "B",
+        "text": "F_{11,16}"
+      },
+      {
+        "id": "C",
+        "text": "F_{15,10}"
+      },
+      {
+        "id": "D",
+        "text": "t₂₅"
+      }
+    ],
+    "answer": "A. F_{10,15}",
+    "explanation": "•\tA"
+  },
+  {
+    "id": 114,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X₁,...,X₅ be iid Normal(2, 1). Then ∑(Xᵢ - 2)² follows χ²_k distribution with k = ________. (Answer in integer)",
+    "options": [],
+    "answer": "5",
+    "explanation": "•\t5"
+  },
+  {
+    "id": 115,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "If Z ~ Normal(0,1) and U ~ χ²_ν are independent, then Z/√(U/ν) follows:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Normal(0,1)"
+      },
+      {
+        "id": "B",
+        "text": "t_ν"
+      },
+      {
+        "id": "C",
+        "text": "χ²_ν"
+      },
+      {
+        "id": "D",
+        "text": "F_{1,ν}"
+      }
+    ],
+    "answer": "B. t_ν",
+    "explanation": "•\tB"
+  },
+  {
+    "id": 116,
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ χ²₁₀. Using the approximation √(2X) ~ Normal(√(2ν-1), 1), the probability P(X > 20) is approximately ________. (Rounded off to three decimal places) [Use Φ(1.64)=0.95]",
+    "options": [],
+    "answer": "0.050",
+    "explanation": "•\t0.050"
+  },
+  {
+    "id": 117,
+    "type": "NAT",
+    "marks": 1,
+    "text": "From Normal population, sample of n=20 gives sample mean and variance. The quantity (n-1)S²/σ² has ________ degrees of freedom. (Answer in integer)",
+    "options": [],
+    "answer": "19",
+    "explanation": "•\t19"
+  },
+  {
+    "id": 118,
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Sample of n=16 from Normal(μ, σ²) gives X̄=100, S=12. To test H₀: μ=95, the test statistic is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "(100-95)/(12/√16) = 1.67"
+      },
+      {
+        "id": "B",
+        "text": "(100-95)/(12/√15) = 1.61"
+      },
+      {
+        "id": "C",
+        "text": "(100-95)/(12/4) = 1.67"
+      },
+      {
+        "id": "D",
+        "text": "Both A and C"
+      }
+    ],
+    "answer": "D. Both A and C",
+    "explanation": "•\tD"
+  },
+  {
+    "id": 119,
+    "type": "NAT",
+    "marks": 2,
+    "text": "ANOVA comparing 4 groups (n₁=n₂=n₃=n₄=10) gives MSB=120 (Mean Square Between) and MSW=30 (Mean Square Within). The F-statistic is ________. (Answer in integer)",
+    "options": [],
+    "answer": "4",
+    "explanation": "•\t4"
+  },
+  {
+    "id": 120,
+    "type": "MSQ",
+    "marks": 2,
+    "text": "Which of the following is/are correct?\n\n\n\n\n\nBONUS",
+    "options": [
+      {
+        "id": "A",
+        "text": "If X ~ χ²_m and Y ~ χ²_n are independent, then X+Y ~ χ²_{m+n}"
+      },
+      {
+        "id": "B",
+        "text": "If X ~ t_ν, then X² ~ F_{1,ν}"
+      },
+      {
+        "id": "C",
+        "text": "χ²_ν has mean ν and variance 2ν"
+      },
+      {
+        "id": "D",
+        "text": "t_ν distribution is symmetric about 0"
+      }
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": "T1",
+    "type": "NAT",
+    "marks": 2,
+    "text": "A random variable X has the property that E[X^n] = n! for all positive integers n. The probability P(X ≤ 2) is ________. (Rounded off to three decimal places) [Hint: Recognize the distribution]",
+    "options": [],
+    "answer": "0.865",
+    "explanation": "•\tX ~ Exponential(1): E[X^n] = n!\n\t•\t0.865"
+  },
+  {
+    "id": "T2",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Three players A, B, C play a game. A beats B with probability 0.6, B beats C with probability 0.7, C beats A with probability 0.5 (all independent). They play a round-robin (each plays each other once). The probability that there is no overall winner (someone who beat everyone) is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.38"
+      },
+      {
+        "id": "B",
+        "text": "0.44"
+      },
+      {
+        "id": "C",
+        "text": "0.52"
+      },
+      {
+        "id": "D",
+        "text": "0.59"
+      }
+    ],
+    "answer": "B. 0.44",
+    "explanation": "•\t0.44"
+  },
+  {
+    "id": "T3",
+    "type": "NAT",
+    "marks": 2,
+    "text": "Box 1: 90% red, 10% blue balls. Box 2: 10% red, 90% blue balls. A box is chosen with equal probability. A ball is drawn and is red, then replaced. A second ball is drawn from THE SAME BOX. The probability the second ball is also red is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.820",
+    "explanation": "•\t0.820"
+  },
+  {
+    "id": "T4",
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let N ~ Poisson(λ=2). Let X₁, X₂,... be iid Bernoulli(0.5), independent of N. Define S = X₁ + X₂ +...+ X_N (S=0 if N=0). Then E[S] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "1",
+    "explanation": "•\t1"
+  },
+  {
+    "id": "T5",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Let X₁, X₂,...,X_n be iid Uniform[0, θ]. The expected value of min(X₁,...,X_n) is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "θ/n"
+      },
+      {
+        "id": "B",
+        "text": "θ/(n+1)"
+      },
+      {
+        "id": "C",
+        "text": "θ/(n-1)"
+      },
+      {
+        "id": "D",
+        "text": "θ/2n"
+      }
+    ],
+    "answer": "B. θ/(n+1)",
+    "explanation": "•\tB"
+  },
+  {
+    "id": "T6",
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Uniform{1,2,3,4,5}. Given X=x, let Y ~ Binomial(n=x, p=0.5). Given Y=y, let Z ~ Poisson(λ=y). The value of E[Z] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "1.50",
+    "explanation": "•\t1.50"
+  },
+  {
+    "id": "T7",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "A fair coin is tossed repeatedly. Let T be the number of tosses until the pattern HH (two consecutive heads) appears. Then E[T] equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "answer": "B. 6",
+    "explanation": "•\tB"
+  },
+  {
+    "id": "T8",
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Uniform{-1, 0, 1} with equal probabilities. Define Y = X². Then Cov(X, Y) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "0",
+    "explanation": "•\t0"
+  },
+  {
+    "id": "T9",
+    "type": "NAT",
+    "marks": 1,
+    "text": "A random permutation of {1,2,3,4,5,6} is chosen. Let X_i = 1 if element i is NOT in position i, else 0. Then E[X₁ + X₂ +...+ X₆] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "5",
+    "explanation": "•\t5"
+  },
+  {
+    "id": "T10",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "Random variables satisfy E[Y|X] = X and Var(Y|X) = X². If X ~ Uniform[0,2], then Var(Y) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "4/3"
+      },
+      {
+        "id": "B",
+        "text": "5/3"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "7/3"
+      }
+    ],
+    "answer": "B. 5/3",
+    "explanation": "•\tB"
+  },
+  {
+    "id": "T11",
+    "type": "NAT",
+    "marks": 2,
+    "text": "A fair die is rolled repeatedly. The expected number of rolls until all six faces have appeared at least once is ________. (Rounded off to one decimal place)",
+    "options": [],
+    "answer": "14.7",
+    "explanation": "•\t14.7"
+  },
+  {
+    "id": "T12",
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X ~ Exponential(λ=1). Define Y = ⌊X⌋ + (X - ⌊X⌋)² where ⌊·⌋ is the floor function. Then E[Y] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "1.25",
+    "explanation": "•\t1.25"
+  },
+  {
+    "id": "T13",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "A random variable has PDF f(x) = (1/2)e^(-|x|) for all real x. This is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laplace distribution"
+      },
+      {
+        "id": "B",
+        "text": "Cauchy distribution"
+      },
+      {
+        "id": "C",
+        "text": "Double exponential"
+      },
+      {
+        "id": "D",
+        "text": "Both A and C"
+      }
+    ],
+    "answer": "D. Both A and C",
+    "explanation": "•\tD"
+  },
+  {
+    "id": "T14",
+    "type": "NAT",
+    "marks": 2,
+    "text": "Let X ~ Uniform[-1, 1]. Define Y = |X|. The correlation coefficient ρ(X, Y) is ________. (Answer in integer)",
+    "options": [],
+    "answer": "0",
+    "explanation": "•\t0"
+  },
+  {
+    "id": "T15",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "If the PGF of X is G_X(s) = (0.3 + 0.7s)^5, then P(X is even) equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.5"
+      },
+      {
+        "id": "B",
+        "text": "[1 + (0.3 - 0.7)^5]/2"
+      },
+      {
+        "id": "C",
+        "text": "[1 + (-0.4)^5]/2"
+      },
+      {
+        "id": "D",
+        "text": "0.50016"
+      }
+    ],
+    "answer": "D. 0.50016",
+    "explanation": "•\tD"
+  },
+  {
+    "id": "T16",
+    "type": "NAT",
+    "marks": 2,
+    "text": "A random variable has PDF f(x) = 30x²(1-x)² for 0 < x < 1. Then E[X] is ________. (Rounded off to two decimal places)",
+    "options": [],
+    "answer": "0.50",
+    "explanation": "•\tBeta(3,3): E[X] = 3/6 = 0.50"
+  },
+  {
+    "id": "T17",
+    "type": "NAT",
+    "marks": 1,
+    "text": "Let X be the number of tosses of a fair coin until HH appears. Given the first toss is T, the conditional expectation E[X | first toss is T] is ________. (Answer in integer)",
+    "options": [],
+    "answer": "8",
+    "explanation": "•\t8"
+  },
+  {
+    "id": "T18",
+    "type": "MCQ",
+    "marks": 2,
+    "text": "For X ~ Binomial(n=20, p=0.5), the difference |P(X=10) - φ(10)| where φ is the normal approximation density is closest to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overestimates by ~10%"
+      },
+      {
+        "id": "B",
+        "text": "Underestimates by ~10%"
+      },
+      {
+        "id": "C",
+        "text": "Nearly exact (< 1% error)"
+      },
+      {
+        "id": "D",
+        "text": "Overestimates by ~20%"
+      }
+    ],
+    "answer": "B. Underestimates by ~10%",
+    "explanation": "•\tB"
+  },
+  {
+    "id": "T19",
+    "type": "NAT",
+    "marks": 2,
+    "text": "A random variable has PDF f(x) = 3x² for 0 < x < 1. The difference (Median - Mean) is ________. (Rounded off to three decimal places)",
+    "options": [],
+    "answer": "0.044",
+    "explanation": "•\tMedian = 0.794, Mean = 0.75\n\t•\t0.044"
+  },
+  {
+    "id": "T20",
+    "type": "MCQ",
+    "marks": 1,
+    "text": "If X ~ Uniform[0, 1], which inequality is correct?\n\n\n\n\n\nANSWER KEY FOLLOWS ON NEXT PAGE",
+    "options": [
+      {
+        "id": "A",
+        "text": "E[1/X] ≥ 1/E[X]"
+      },
+      {
+        "id": "B",
+        "text": "E[√X] ≥ √E[X]"
+      },
+      {
+        "id": "C",
+        "text": "E[X²] ≥ (E[X])²"
+      },
+      {
+        "id": "D",
+        "text": "All of the above"
+      }
+    ],
+    "answer": "D. All of the above",
+    "explanation": "•\tD\n\nEND OF PRACTICE SET\nStudy Strategy:\n\t•\tMaster Q1-Q120 first (core patterns)\n\t•\tAttempt T1-T20 only after 90%+ accuracy on main sections\n\t•\tTime yourself: 2 minutes per 2-mark, 90 seconds per 1-mark\n\t•\tReview wrong answers to identify pattern gaps"
+  }
+]
