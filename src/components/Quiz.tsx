@@ -85,6 +85,9 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
       <div className="quiz-header">
         <div className="quiz-progress-text">Question {currentIndex + 1} of {questions.length}</div>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          <div className="quiz-marks" style={{ background: 'rgba(59, 130, 246, 0.1)', color: 'var(--primary)' }}>
+            {question.type}
+          </div>
           <div className="quiz-marks">{question.marks} {question.marks === 1 ? 'Mark' : 'Marks'}</div>
           <button className="btn btn-outline" style={{ padding: '0.25rem 1rem', fontSize: '0.9rem', borderColor: 'var(--error)', color: 'var(--error)' }} onClick={handleSubmit}>
             Submit Early
