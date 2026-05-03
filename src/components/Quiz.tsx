@@ -10,6 +10,7 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
   const [checkedQuestions, setCheckedQuestions] = useState<Set<number | string>>(new Set());
+  const [showPalette, setShowPalette] = useState(false);
   
   const question = questions[currentIndex];
   const currentAnswer = answers[question.id] || (question.type === 'MSQ' ? [] : '');
@@ -85,6 +86,9 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
       <div className="quiz-header">
         <div className="quiz-progress-text">Question {currentIndex + 1} of {questions.length}</div>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          <button className="btn btn-outline" style={{ padding: '0.25rem 1rem', fontSize: '0.9rem' }} onClick={() => setShowPalette(!showPalette)}>
+            {showPalette ? 'Hide Grid' : 'Question Grid'}
+          </button>
           <div className="quiz-marks" style={{ background: 'rgba(59, 130, 246, 0.1)', color: 'var(--primary)' }}>
             {question.type}
           </div>
@@ -98,6 +102,34 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
       <div className="progress-bar-container">
         <div className="progress-bar-fill" style={{ width: `${progressPercentage}%` }}></div>
       </div>
+
+      {showPalette && (
+        <div className="question-palette">
+          {questions.map((q, idx) => {
+            const uA = answers[q.id];
+            const isAnswered = uA && (!Array.isArray(uA) || uA.length > 0);
+            const isCurrent = idx === currentIndex;
+            
+            let classes = 'palette-btn';
+            if (isCurrent) classes += ' palette-current';
+            else if (isAnswered) classes += ' palette-answered';
+
+            return (
+              <button
+                key={q.id}
+                onClick={() => {
+                  setCurrentIndex(idx);
+                  if (window.innerWidth <= 768) setShowPalette(false);
+                }}
+                className={classes}
+                title={`Question ${q.id}`}
+              >
+                {idx + 1}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       <div className="question-text">
         <strong>Q{question.id}: </strong>
