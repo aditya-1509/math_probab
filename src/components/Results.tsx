@@ -5,9 +5,11 @@ interface ResultsProps {
   questions: Question[];
   answers: Answers;
   onRestart: () => void;
+  onNextBlock: () => void;
+  isLastBlock: boolean;
 }
 
-export const Results: React.FC<ResultsProps> = ({ questions, answers, onRestart }) => {
+export const Results: React.FC<ResultsProps> = ({ questions, answers, onRestart, onNextBlock, isLastBlock }) => {
   const [filter, setFilter] = useState<'all' | 'incorrect' | 'unanswered'>('all');
 
   const checkAnswer = (q: Question, userAnswer: string | string[] | undefined) => {
@@ -114,9 +116,17 @@ export const Results: React.FC<ResultsProps> = ({ questions, answers, onRestart 
           </div>
         </div>
 
-        <button className="btn btn-accent" onClick={onRestart} style={{ marginTop: '2rem' }}>
-          Take Quiz Again
-        </button>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
+          {!isLastBlock ? (
+            <button className="btn btn-accent" onClick={onNextBlock}>
+              Next Set of Questions
+            </button>
+          ) : (
+            <button className="btn btn-accent" onClick={onRestart}>
+              Take Quiz Again
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="glass-panel" style={{ marginTop: '2rem' }}>

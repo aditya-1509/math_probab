@@ -10,42 +10,58 @@ function App() {
     status: 'landing',
     answers: {},
     score: 0,
-    totalMarks: 0
+    totalMarks: 0,
+    currentBlockIndex: 0
   });
 
+  const QUESTIONS_PER_BLOCK = 20;
+  const allQuestions = questionsData as Question[];
+  const currentQuestions = allQuestions.slice(
+    state.currentBlockIndex * QUESTIONS_PER_BLOCK,
+    (state.currentBlockIndex + 1) * QUESTIONS_PER_BLOCK
+  );
+  
+  const isLastBlock = (state.currentBlockIndex + 1) * QUESTIONS_PER_BLOCK >= allQuestions.length;
+
   const handleStart = () => {
-    setState({ ...state, status: 'quiz', answers: {} });
+    setState({ ...state, status: 'quiz', answers: {}, currentBlockIndex: 0 });
   };
 
   const handleSubmit = (answers: Answers) => {
-    setState({ ...state, status: 'results', answers });
+    setState({ ...state, status: 'results', answers: { ...state.answers, ...answers } });
   };
 
   const handleRestart = () => {
-    setState({ ...state, status: 'landing', answers: {} });
+    setState({ ...state, status: 'landing', answers: {}, currentBlockIndex: 0 });
+  };
+
+  const handleNextBlock = () => {
+    setState({ ...state, status: 'quiz', currentBlockIndex: state.currentBlockIndex + 1 });
   };
 
   return (
     <div className="app-container">
       {state.status === 'landing' && (
         <Landing 
-          questions={questionsData as Question[]} 
+          questions={allQuestions} 
           onStart={handleStart} 
         />
       )}
       
       {state.status === 'quiz' && (
         <Quiz 
-          questions={questionsData as Question[]} 
+          questions={currentQuestions} 
           onSubmit={handleSubmit} 
         />
       )}
       
       {state.status === 'results' && (
         <Results 
-          questions={questionsData as Question[]} 
+          questions={currentQuestions} 
           answers={state.answers}
-          onRestart={handleRestart} 
+          onRestart={handleRestart}
+          onNextBlock={handleNextBlock}
+          isLastBlock={isLastBlock}
         />
       )}
     </div>

@@ -20,4 +20,5 @@ export interface QuizState {
   answers: Answers;
   score: number;
   totalMarks: number;
+  currentBlockIndex: number;
 }

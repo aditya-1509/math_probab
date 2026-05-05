@@ -9,41 +9,9 @@ interface QuizProps {
 export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
-  const [checkedQuestions, setCheckedQuestions] = useState<Set<number | string>>(new Set());
   const [showPalette, setShowPalette] = useState(false);
-  
   const question = questions[currentIndex];
   const currentAnswer = answers[question.id] || (question.type === 'MSQ' ? [] : '');
-
-  const checkAnswerStatus = (q: Question, userAnswer: string | string[] | undefined) => {
-    if (!userAnswer || (Array.isArray(userAnswer) && userAnswer.length === 0)) return 'unanswered';
-    
-    const correctAns = q.answer.trim().toLowerCase();
-    
-    if (q.type === 'MCQ') {
-      const uA = (userAnswer as string).toLowerCase();
-      return correctAns.startsWith(uA) || correctAns === uA ? 'correct' : 'incorrect';
-    } 
-    
-    if (q.type === 'MSQ') {
-      const uA = (userAnswer as string[]).map(a => a.toLowerCase()).sort().join(', ');
-      const cA = correctAns.split(',').map(a => a.trim()).sort().join(', ');
-      return uA === cA ? 'correct' : 'incorrect';
-    }
-
-    if (q.type === 'NAT') {
-      const uA = (userAnswer as string).trim().toLowerCase();
-      return correctAns.includes(uA) || uA === correctAns ? 'correct' : 'incorrect';
-    }
-
-    return 'incorrect';
-  };
-
-  const handleCheckAnswer = () => {
-    const newChecked = new Set(checkedQuestions);
-    newChecked.add(question.id);
-    setCheckedQuestions(newChecked);
-  };
 
   const handleOptionClick = (optionId: string) => {
     if (question.type === 'MCQ') {
@@ -94,7 +62,7 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
           </div>
           <div className="quiz-marks">{question.marks} {question.marks === 1 ? 'Mark' : 'Marks'}</div>
           <button className="btn btn-outline" style={{ padding: '0.25rem 1rem', fontSize: '0.9rem', borderColor: 'var(--error)', color: 'var(--error)' }} onClick={handleSubmit}>
-            Submit Early
+            Submit Set Early
           </button>
         </div>
       </div>
@@ -169,38 +137,6 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
         </div>
       )}
 
-      {checkedQuestions.has(question.id) && (
-        <div className={`review-card ${checkAnswerStatus(question, currentAnswer)}`} style={{ marginTop: '2rem', marginBottom: '1rem', padding: '1.5rem', borderRadius: '12px' }}>
-          <div className="review-q-header" style={{ marginBottom: '1rem' }}>
-            <div className="review-q-id">Result</div>
-            <div className={`review-status status-${checkAnswerStatus(question, currentAnswer)}`}>
-              {checkAnswerStatus(question, currentAnswer).charAt(0).toUpperCase() + checkAnswerStatus(question, currentAnswer).slice(1)}
-            </div>
-          </div>
-          <div className="review-answers">
-            <div className="review-answer-row">
-              <span className="review-answer-label">Your Answer:</span>
-              <span style={{ fontWeight: 600 }}>
-                {Array.isArray(currentAnswer) ? currentAnswer.join(', ') : (currentAnswer || 'Not answered')}
-              </span>
-            </div>
-            <div className="review-answer-row">
-              <span className="review-answer-label">Correct Answer:</span>
-              <span style={{ fontWeight: 600, color: 'var(--success)' }}>
-                {question.answer || 'Not provided in key'}
-              </span>
-            </div>
-          </div>
-          {question.explanation && (
-            <div className="review-explanation" style={{ marginTop: '1rem' }}>
-              <strong style={{ color: 'var(--text-main)' }}>Explanation:</strong>
-              <br />
-              {question.explanation}
-            </div>
-          )}
-        </div>
-      )}
-
       <div className="quiz-footer">
         <button 
           className="btn btn-outline" 
@@ -210,18 +146,9 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
           Previous
         </button>
 
-        <button 
-          className="btn btn-outline"
-          onClick={handleCheckAnswer}
-          disabled={checkedQuestions.has(question.id) || !currentAnswer || (Array.isArray(currentAnswer) && currentAnswer.length === 0)}
-          style={{ borderColor: 'var(--primary)', color: 'var(--primary)' }}
-        >
-          Check Answer
-        </button>
-        
         {currentIndex === questions.length - 1 ? (
           <button className="btn btn-accent" onClick={handleSubmit}>
-            Submit Quiz
+            Submit Set
           </button>
         ) : (
           <button className="btn btn-accent" onClick={handleNext}>
