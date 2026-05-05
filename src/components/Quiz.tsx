@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { Question, Answers } from '../types';
 
 interface QuizProps {
@@ -10,8 +10,28 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
   const [showPalette, setShowPalette] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(45 * 60);
   const question = questions[currentIndex];
   const currentAnswer = answers[question.id] || (question.type === 'MSQ' ? [] : '');
+
+  useEffect(() => {
+    if (timeLeft <= 0) {
+      onSubmit(answers);
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft(prev => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [timeLeft, answers, onSubmit]);
+
+  const formatTime = (seconds: number) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
 
   const handleOptionClick = (optionId: string) => {
     if (question.type === 'MCQ') {
@@ -61,6 +81,10 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onSubmit }) => {
             {question.type}
           </div>
           <div className="quiz-marks">{question.marks} {question.marks === 1 ? 'Mark' : 'Marks'}</div>
+          <div className="quiz-marks" style={{ background: 'rgba(239, 68, 68, 0.1)', color: 'var(--error)', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            {formatTime(timeLeft)}
+          </div>
           <button className="btn btn-outline" style={{ padding: '0.25rem 1rem', fontSize: '0.9rem', borderColor: 'var(--error)', color: 'var(--error)' }} onClick={handleSubmit}>
             Submit Set Early
           </button>
